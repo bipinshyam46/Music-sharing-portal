@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<!-- about  -->
+<div id="about" class="about">
+  <div class="container">
+    <div class="row display_boxflex">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2>Music share portal..</h2>
+          <p>Add music........If you are a new member sign up here</p>
+          <a href="signup">Sign up</a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <figure><img src="{% static 'images/about.png' %}" alt="#" /></figure>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end abouts -->
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'userbase.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="backgro_mh">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heding">
+           <h2>Upload music</h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center contact_bg">
+    <div class="col-md-12 text-center">
+        <table class="table table-bordered contact_bg">
+            <tr >
+                <th class="ml-3">Upload as public</th>
+                <th class="ml-3">Upload as private</th>
+                <th class="ml-3">Upload as protected</th>
+            </tr>
+            <tr >
+                <td class="ml-3"><a class="btn btn-primary text-white" href="public">upload</a></td>
+                <td class="ml-3"><a class="btn btn-primary text-white" href="private">upload</a></td>
+                <td class="ml-3"><a class="btn btn-primary text-white" href="protected">upload</a></td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+      
+  
+{% endblock %}

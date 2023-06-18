@@ -1,0 +1,44 @@
+
+{% extends 'userbase.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="row text-center contact_bg">
+  <div class="col-md-12 text-center">
+      <table class="table table-bordered contact_bg">
+          <tr class="table-borderd ">
+              <th class="ml-3">Title</th>
+              <th class="ml-3">Artist</th>
+              <th class="ml-3">Status</th>
+              <th class="ml-3">Audio file</th>
+          </tr>
+      {% for i in music_list.public_uploads %}
+          <tr class="table-borderd">
+              <td class="ml-3">{{i.title}}</td>
+              <td class="ml-3">{{i.artist}}</td>
+              <td class="ml-3">{{i.status}}</td>
+              <td class="ml-3">{{i.audio_file}}</td>
+          </tr>
+      {% endfor %}
+      {% for i in music_list.private_uploads %}
+          <tr class="table-borderd">
+              <td class="ml-3">{{i.title}}</td>
+              <td class="ml-3">{{i.artist}}</td>
+              <td class="ml-3">{{i.status}}</td>
+              <td class="ml-3">{{i.audio_file}}</td>
+          </tr>
+      {% endfor %}
+      {% for i in music_list.user_music %}
+          <tr class="table-borderd">
+              <td class="ml-3">{{i.title}}</td>
+              <td class="ml-3">{{i.artist}}</td>
+              <td class="ml-3">{{i.status}}</td>
+              <td class="ml-3">{{i.audio_file}}</td>
+          </tr>
+      {% endfor %}
+      </table>
+  </div>
+</div>
+
+{% endblock %}

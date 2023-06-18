@@ -1,0 +1,29 @@
+{% extends 'userbase.html' %}
+
+{% load static %}
+{% block content %}
+  
+          <div class="row">
+            <div class="col-md-12">
+              <form class="contact_bg" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Title" type="text" name="title">
+                </div>
+                <div class="col-md-12">
+                  <input class="contactus" placeholder="Artist" type="text" name="artist">
+                </div>
+                <div class="col-md-12">
+                    <input class="contactus" placeholder="Upload file" type="file" name="audio_file">
+                  </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <button class="btn btn-primary btn-lg" type="submit">Upload</button>
+                </div>
+              </div>
+            </div>
+            </form>
+
+            </div>
+{% endblock %}
